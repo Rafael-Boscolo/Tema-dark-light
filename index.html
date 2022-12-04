@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+
+    <!-- propriedade "defer" é para carregar o js depois do html -->
+    <script src="js/script.js" defer></script>
+
+    <title>Mode Dark Light</title>
+  </head>
+  <body>
+    <header>
+      <h2>Theme Dark and Light</h2>
+      <div>
+        <input type="checkbox" name="change-theme" id="change-theme" />
+        <label for="change-theme" >
+          <i class="bi bi-sun"></i>
+          <i class="bi bi-moon"></i>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <div class="card">
+        <div class="card-img">
+          <span>Nike</span>
+          <img src="img/tenis.png" alt="Tênis Nike" />
+        </div>
+        <div class="card-details">
+          <h2>Tênis Nike:</h2>
+          <p class="subtitle">Execelente para Corridas</p>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            illum quaerat, eum excepturi incidunt consequatur magnam odit, eos
+            nemo, repellendus fugit hic adipisci. Optio ducimus rerum eos mollitia
+            minus dolore.
+          </p>
+          <div class="price-container">
+            <span class="price">R$299<span class="cents">,99</span></span>
+            <button class="btn-buy">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

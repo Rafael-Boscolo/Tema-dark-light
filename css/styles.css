@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+}
+
+:root {
+    --gray-100: #eceff1;
+    --gray-150: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    
+    --blue-500:#3b82f6;
+    --blue-600:#2563eb;
+
+    --gren-600: #059669;
+
+    --white: #fff;
+
+    --black: #000;
+}
+
+html,
+body {
+    height: 100vh;
+    background-color: var(--gray-100);
+    transition: 0.3s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.bi {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.bi-moon {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gray-200);
+    box-shadow: 0.5px 0.5px 10px 0.2px var(--black);
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    margin-top: 4rem;
+    width: 60%;
+    background-color: var(--white);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.card-img,
+.card-details {
+    padding: 2rem;
+    width: 50%;
+}
+
+.card-img {
+    position: relative;
+    background-color: var(--gray-150);
+}
+
+.card-img span {
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.card img {
+    width: 100%;
+    transform: rotate(-25deg);
+    position: absolute;
+    right: -1rem;
+    top: 10rem;
+}
+
+.card-details h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-weight: bold;
+    color: var(--gray-700);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.description {
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.cents {
+    font-size: 1.3rem;
+}
+
+.btn-buy {
+    background-color: var(--gray-700);
+    width: 7rem;
+    height: 3rem;
+    border: none;
+    border-radius: 3rem;
+    color: var(--white);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background-color: var(--gren-600);
+    transition: 0.3s;
+}
+
+/* DARK THEME */
+.dark {
+    background-color: var(--gray-800);
+    color: var(--white);
+}
+
+.dark header {
+    background-color: var(--gray-700);
+}
+
+.dark .bi-sun {
+    display: none;
+}
+
+.dark .bi-moon {
+    display: block;
+}
+
+.dark .card {
+    background-color: var(--gray-600);
+}
+
+.dark .card-img {
+    background-color: var(--gray-700);
+}
+
+.dark .subtitle{
+    color: var(--blue-500);
+}
+
+.dark .btn-buy {
+    background-color: var(--blue-500);
+}
+
+.dark .btn-buy:hover {
+    background-color: var(--gren-600);
+    transition: 0.3s;
+}
+
+.dark .description {
+    color: var(--blue-600);
+}
